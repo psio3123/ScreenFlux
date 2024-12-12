@@ -82,10 +82,10 @@ def transform_data(rows):
 
 def write_to_influxdb(data):
     # InfluxDB configuration
-    db_url = "..."
-    db_token = "..."
-    db_org = "..."
-    db_bucket = "screentime"
+    db_url = "https://influxdb.psiox.de"
+    db_token = "miNtMa4t4dnqWaHzIBk3kb2PMmN62D_am3yK06yzIXGfVcPFoksEeSZePgzT9DyQ4hHWXvVvRkZdMDl3jyrMDw=="
+    db_org = "psio"
+    db_bucket = "psio"
     
     # Create InfluxDB client and write API
     client = InfluxDBClient(url=db_url, token=db_token, org=db_org)
